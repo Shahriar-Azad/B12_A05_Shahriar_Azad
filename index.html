@@ -25,8 +25,59 @@
           <p class="text-lg -mt-1 font-extrabold" style="color: #006747;">Service</p>
         </div>
       </div>
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-2  rounded-full px-3 py-1.5"  style="background-color: #dcf1e4">
+            <span id="favCount" class="text-sm font-semibold">0</span>
+          <img src="B12-A5-Emergency-Hotline/assets/heart.png" alt="Favorite" class="w-5 h-5">
+          
+        </div>
+        <div class="flex items-center gap-2 rounded-full px-3 py-1.5" style="background-color: #dcf1e4">
+                      <span id="coinCount" class="text-sm font-semibold">100</span>
+          <img src="B12-A5-Emergency-Hotline/assets/coin.png" alt="Coin" class="w-5 h-5">
+
+        </div>
+        <div class="flex items-center gap-2 text-white rounded-full px-3 py-1.5" style="background-color:#00A63E;">
+          <span id="copyCount" class="text-sm font-semibold">0</span>
+          <span class="text-sm">Copy</span>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
+<section class="relative">
+    <div class="bg-gradient-to-r text-white" style="background: linear-gradient(to right, #013223, #006747, #013223);">
+      <div class=" px-4 sm:px-6 lg:px-8 py-12 text-center">
+        <div class="w-16 h-16 mx-auto rounded-full  grid place-items-center">
+          <img src="B12-A5-Emergency-Hotline/assets/logo-dark.png" alt="Hero Icon" class="w-92 h-92">
+        </div>
+        <h1 class="mt-4 text-2xl sm:text-3xl md:text-4xl font-extrabold">Emergency Service Directory</h1>
+        <p class="mt-2 text-sm opacity-90 font-bold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+      </div>
+    </div>
+  </section>
+
+
+  <main class=" px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+      <section class="lg:col-span-3">
+        <div id="cardGrid" class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6"></div>
+      </section>
+
+      <aside class="lg:col-span-1">
+        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 h-full flex flex-col">
+          <div class="flex items-center justify-between mb-4">
+            <div class="inline-flex items-center gap-2">
+              <img src="B12-A5-Emergency-Hotline/assets/icons8-history-32.png" alt="History" class="w-5 h-5">
+              <h3 class="font-semibold">Call History</h3>
+            </div>
+            <button id="clearHistory" class="px-3 py-1.5 text-sm rounded-lg text-white" style="background-color:#00A63E;">Clear</button>
+          </div>
+          <ul id="historyList" class="space-y-3 text-sm overflow-auto grow pr-1"></ul>
+        </div>
+      </aside>
+    </div>
+  </main>
 
 
 
