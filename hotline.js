@@ -79,4 +79,24 @@
       });
     }
 
+    function addHistory(name, number){
+      const li = document.createElement('li');
+      const time = new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', second: '2-digit'});
+      li.className = 'p-3 rounded-xl border border-gray-100 bg-gray-50';
+      li.innerHTML = `
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <div class="text-sm font-semibold">${name}</div>
+            <div class="text-xs text-gray-500">${number}</div>
+          </div>
+          <div class="text-[11px] text-gray-500 whitespace-nowrap">${time}</div>
+        </div>
+      `;
+      historyList.prepend(li);
+    }
 
+    document.getElementById('clearHistory').addEventListener('click', () => {
+      historyList.innerHTML = '';
+    });
+
+    renderCards();
