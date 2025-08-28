@@ -79,7 +79,42 @@
     </div>
   </main>
 
+  <template id="cardTemplate">
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 flex flex-col">
+      <div class="flex items-start justify-between">
+        <div class="w-10 h-10 rounded-xl grid place-items-center" data-role="icon-container">
+          <img src="assets/service-icon.png" alt="Service Icon" class="w-6 h-6">
+        </div>
+        <button class="p-2 rounded-full " data-role="fav">
+          <img src="B12-A5-Emergency-Hotline/assets/heart-logo-2.png" alt="Favorite" class="w-5 h-5">
+        </button>
+      </div>
+      <div class="mt-4">
+        <h3 class="text-base font-semibold leading-tight" data-role="name">Service Name</h3>
+        <p class="text-xs text-gray-500 -mt-0.5" data-role="sub">Subtext</p>
+      </div>
+      <div class="mt-4 text-xl font-bold tracking-wide" data-role="number">000</div>
+      <div class="mt-2">
+        <span class="inline-flex items-center gap-1 rounded-full border border-gray-200 bg-gray-50 text-xs px-2.5 py-1 text-gray-700" data-role="category">
+          
+          <span class="capitalize">Category</span>
+        </span>
+      </div>
+        <div class="mt-5 flex gap-3">
+        
+        <button class="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-xl border text-sm font-medium bg-gray-100 hover:bg-gray-200" data-role="copy">
+            <img src="B12-A5-Emergency-Hotline/assets/copy.png" alt="Copy" class="w-4 h-4">
+            <span>Copy</span>
+        </button>
 
+  
+        <button class="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-white" style="background-color:#00A63E;" data-role="call">
+            <img src="B12-A5-Emergency-Hotline/assets/telephone.png" alt="Call" class="w-4 h-4">
+            <span>Call</span>
+        </button>
+        </div>
+    </div>
+  </template>
 
 <script src="hotline.js"></script>
 </body>
